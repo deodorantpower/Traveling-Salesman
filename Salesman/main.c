@@ -79,24 +79,3 @@ int main(void) {
 	return 0;
 }
 
-/**
-* @file main.cpp
-* @brief 乱数使って中身をデタラメに入れ換える
-* @author 長谷川　勇太
-* @date 2019/06/10
-* @param   data      :short*
-* @param   size      :short
-* map[0]～map[size-1]の中身を替える
-*/
-
-void shuffle(short* data, short size) {
-
-	for (short i = 0; i < size; ++i) {
-		short pos = rand() % (size - i);
-		// data[pos] と data[size-i-1] を入れ換える
-		short tmp = data[size - i - 1];
-		data[size - i - 1] = data[pos];
-		data[pos] = tmp;
-	}
-}
-

@@ -8,6 +8,3 @@
 #include "Seales.h"
 #include "change.h"
 
-
-void shuffle(short* , short );
-

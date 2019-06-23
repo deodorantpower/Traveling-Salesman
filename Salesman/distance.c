@@ -9,9 +9,9 @@
 *           (‘æˆêˆø”,2) = Œ»İ‚Ü‚Å‚Ì‘‹——£‚ğ‚»‚Ì‚Ü‚Ü•Ô‚·
 * @author   ’·’Jì@—E‘¾
 * @date     2019/06/12
-* @param    distance     :double
-* @param    flg          :short
-* @return   ‘‹——£‚ğ•Ô‚· :double
+* @param    distance    : double    : ‘‹——£
+* @param    flg         : short     : ”ÍˆÍƒtƒ‰ƒO
+* @return               : double    : ‘‹——£‚ğ•Ô‚· 
 * 
 */
 double Distance(double distance,short flg) {

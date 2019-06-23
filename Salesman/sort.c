@@ -5,9 +5,9 @@
 * @brief    範囲の順番をソートする
 * @author   長谷川　勇太
 * @date     2019/06/11
-* @param    distance :double
-* @param    anum    :short*
-* @return   なし     :void
+* @param    distance    : double    : 総距離 
+* @param    anum        : short*    : 範囲座標数
+* @return   なし        : void      
 */
 void AreaSort(PDATA* data) {
 
@@ -30,8 +30,8 @@ void AreaSort(PDATA* data) {
 * @brief   rankのソート
 * @author  長谷川　勇太
 * @date    2019/06/20
-* @param   ddata    :DDATA*
-* @return  なし     :void
+* @param   ddata    : DDATA*    : 最短距離データ
+* @return  なし     : void
 */
 void RankSort(DDATA* ddata) {
 	//! 一時格納
