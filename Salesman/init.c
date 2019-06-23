@@ -6,7 +6,8 @@
 * @brief 構造体の初期化
 * @author 長谷川　勇太
 * @date 2019/06/10
-* @param data :PDATA*
+* @param pdata    : PDATA*    : 座標データ
+* @param ddata    : PPATA*    : 最短距離データ
 */
 void S_init(PDATA* pdata, DDATA* ddata) {
 

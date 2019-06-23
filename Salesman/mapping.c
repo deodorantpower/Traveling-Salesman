@@ -5,9 +5,9 @@
 * @brief   座標がどの分布に属しているか振り分ける
 * @author  長谷川　勇太
 * @date    2019/06/12
-* @param   distance :double
-* @param   anum     :short*
-* @return  なし     :void
+* @param   data     : PDATA*    : 座標データ 
+* @param   anum     : short*    : 範囲座標数
+* @return  なし     : void      
 */
 short Mapping(PDATA* data,short* anum) {
 	short half = MAX_POSITION / 2;
@@ -47,7 +47,15 @@ short Mapping(PDATA* data,short* anum) {
 	return PMax(&anum[0]);
  }
 
-short PMax(short* pmax) {
+/**
+* @file    Mapping
+* @brief   座標がどの分布に属しているか振り分ける
+* @author  長谷川　勇太
+* @date    2019/06/12
+* @param   pmax     :short*   : 範囲座標数
+* @return           :short    : 一番座標数が多い範囲の番号
+*/
+short PMax(short* anum) {
 
 	short temp = 0;
 	short num[MAPNUM] = { 0,1,2,3 };
@@ -55,7 +63,7 @@ short PMax(short* pmax) {
 	// 範囲に
 	for (short i = 0; i < MAPNUM; i++) {
 		for (short j = MAPNUM - 1; j > i; j--) {
-			if (pmax[j] > pmax[j -1]) {
+			if (anum[j] > anum[j -1]) {
 				temp = num[j];
 				num[j] = num[j - 1];
 				num[j - 1] = temp;
